@@ -1,0 +1,255 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  font-family: Nunito, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.page-index {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.promo-banner {
+  padding: 50px 123px;
+  position: relative;
+  overflow: hidden;
+
+  &__circle {
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    height: 2880px;
+    width: 2880px;
+    border-radius: 50%;
+    background-color: #ffab08;
+  }
+
+  &__container {
+    padding: 0 328px;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__text-wrapper {
+    flex-shrink: 0;
+  }
+
+  &__logo {
+    width: 150px;
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+    top: 24px;
+    transform: translate(-50%);
+    padding-bottom: 24px;
+    object-fit: cover;
+  }
+
+  &__burger {
+    width: 326px;
+    object-fit: cover;
+  }
+
+  &__text {
+    color: #ffffff;
+    &--white {
+      color: #ffffff;
+    }
+    &--orange {
+      color: #ff5c00;
+    }
+    &:nth-child(2) {
+      margin-bottom: 52px;
+    }
+  }
+
+  &__font {
+    &--first-text {
+      display: block;
+      line-height: 1;
+      font-size: 50px;
+      font-weight: 800;
+    }
+    &--second-text {
+      font-size: 50px;
+      font-weight: bold;
+    }
+    &--third-text {
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    &--semibold {
+      font-weight: 600;
+    }
+  }
+}
+
+.product-card {
+  padding: 12px;
+  width: 300px;
+  &__img {
+    &--product {
+      width: 100%;
+      height: 220px;
+      border-radius: 12px;
+      margin-bottom: 16px;
+      object-fit: cover;
+    }
+  }
+
+  &__price {
+    margin-bottom: 8px;
+  }
+
+  &__product-name {
+    margin-bottom: 30px;
+  }
+
+  &__weight {
+    color: #b1b1b1;
+    margin-bottom: 8px;
+  }
+
+  &__button {
+    width: 100%;
+  }
+
+  &__font {
+    &--price {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    &--weight {
+      font-weight: lighter;
+    }
+  }
+}
+
+.button {
+  transition: all 0.3s ease;
+  background-color: #cdcdd5;
+  border: 0;
+  cursor: pointer;
+  border-radius: 12px;
+  padding: 12px;
+
+  &--primary {
+    background-color: #f86310;
+  }
+
+  &:hover {
+    color: #ffffff;
+    background-color: #ffab08;
+  }
+}
+
+.products-categories {
+  padding: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__cat {
+    display: flex;
+    align-items: center;
+  }
+
+  &__check {
+    padding-left: 1.5em;
+
+    &:checked + .products-categories__img {
+      background-color: #ffab08;
+      border-radius: 50px;
+    }
+  }
+
+  &__img {
+    &--burger {
+      margin-left: -1.5em;
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      background-image: url(../img/icons/burger.svg);
+    }
+    &--burrito {
+      margin-left: -1.5em;
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      background-image: url(../img/icons/burrito.svg);
+    }
+    &--hot-dog {
+      margin-left: -1.5em;
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      background-image: url(../img/icons/hot-dog.svg);
+    }
+    &--pizza {
+      margin-left: -1.5em;
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      background-image: url(../img/icons/pizza.svg);
+    }
+    &--combo {
+      margin-left: -1.5em;
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      background-image: url(../img/icons/combo.svg);
+    }
+    &--sauces {
+      margin-left: -1.5em;
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      background-image: url(../img/icons/sauces.svg);
+    }
+    &--snacks {
+      margin-left: -1.5em;
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      background-image: url(../img/icons/snacks.svg);
+    }
+    &--desserts {
+      margin-left: -1.5em;
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      background-image: url(../img/icons/desserts.svg);
+    }
+    &--wok {
+      margin-left: -1.5em;
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      background-image: url(../img/icons/wok.svg);
+    }
+  }
+}
