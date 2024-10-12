@@ -1,0 +1,75 @@
+.promo-banner {
+  padding: 50px 123px;
+  position: relative;
+  overflow: hidden;
+}
+.promo-banner__circle {
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  height: 2880px;
+  width: 2880px;
+  border-radius: 50%;
+  background-color: #ffab08;
+}
+.promo-banner__container {
+  padding: 0 328px;
+  position: relative;
+  z-index: 2;
+}
+.promo-banner__content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.promo-banner__text-wrapper {
+  flex-shrink: 0;
+}
+.promo-banner__logo {
+  width: 150px;
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  top: 24px;
+  transform: translate(-50%);
+  padding-bottom: 24px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.promo-banner__burger {
+  width: 326px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.promo-banner__text {
+  color: #ffffff;
+}
+.promo-banner__text--white {
+  color: #ffffff;
+}
+.promo-banner__text--orange {
+  color: #ff5c00;
+}
+.promo-banner__text:nth-child(2) {
+  margin-bottom: 52px;
+}
+.promo-banner__font--first-text {
+  display: block;
+  line-height: 1;
+  font-size: 50px;
+  font-weight: 800;
+}
+.promo-banner__font--second-text {
+  font-size: 50px;
+  font-weight: bold;
+}
+.promo-banner__font--third-text {
+  font-size: 16px;
+  font-weight: 400;
+}
+.promo-banner__font--semibold {
+  font-weight: 600;
+}
