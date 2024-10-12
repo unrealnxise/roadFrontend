@@ -1,0 +1,23 @@
+.page-footer {
+  margin-top: 100px;
+  background-color: white;
+}
+.page-footer__wrap {
+  height: 244px;
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.page-footer__text {
+  display: flex;
+  flex-direction: column;
+}
+.page-footer__block {
+  margin: 300px;
+  flex: 0 0 auto;
+}
+.page-footer__phone {
+  display: flex;
+  align-items: center;
+}

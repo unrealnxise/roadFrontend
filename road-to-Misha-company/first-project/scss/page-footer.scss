@@ -1,0 +1,26 @@
+.page-footer {
+   margin-top: 100px;
+   background-color: #ffff;
+   &__wrap {
+      height: 244px;
+      width: 100%;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   &__text {
+      display: flex;
+      flex-direction: column;
+   }
+
+   &__block {
+      margin: 300px;
+      flex: 0 0 auto;
+   }
+
+   &__phone {
+      display: flex;
+      align-items: center;
+   }
+}
