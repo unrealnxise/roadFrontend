@@ -1,0 +1,33 @@
+.product-card {
+  padding: 12px;
+  width: 300px;
+  background-color: white;
+  border-radius: 18px;
+}
+.product-card__img--product {
+  width: 100%;
+  height: 220px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  object-fit: cover;
+}
+.product-card__price {
+  margin-bottom: 8px;
+}
+.product-card__product-name {
+  margin-bottom: 30px;
+}
+.product-card__weight {
+  color: #b1b1b1;
+  margin-bottom: 8px;
+}
+.product-card__button {
+  width: 100%;
+}
+.product-card__font--price {
+  font-size: 24px;
+  font-weight: bold;
+}
+.product-card__font--weight {
+  font-weight: lighter;
+}

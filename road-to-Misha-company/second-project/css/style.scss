@@ -1,0 +1,258 @@
+@import url("fonts.css");
+@import url("null.css");
+
+* {
+    transition: margin-bottom 0.3s;
+    transition: font-size 0.3s;
+    transition: background-color 0.3s;
+    transition: padding-block 0.3s;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+[class*="__container"]{
+    max-width: 1054px;
+    padding-inline: 15px;
+    margin: 0 auto;
+}
+
+.page{}
+[class*="page__"]{
+    padding-block: 64px;
+}
+
+.wrapper {
+    min-height: 100%;
+}
+.hero {
+        color: #fff;
+        position: relative;
+
+		&__container {
+            position: relative;
+            z-index: 3;
+            min-height: 100svh;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 15.533981svh; /* 128/824 */
+
+            padding-block: 7.76699svh; /* 64/824 */
+        }
+
+		&__header {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 3.883495svh; /* 32/824 */
+		}
+
+		&__logo {
+
+		}
+
+        &__logo:not(:last-child) {
+            margin-bottom: 32px;
+		}
+
+		&__menu {
+		}
+
+		&__content {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            row-gap: 2.427184svh; /* 20/824 */
+		}
+
+		&__title {
+            text-transform: uppercase;
+            font-family: 'Bodoni 72', serif;
+            font-size: 96px;
+
+            text-transform: uppercase;
+		}
+
+		&__label {
+            letter-spacing: 3.6px;
+            font-size: 24px;
+		}
+
+		&__button {
+		}
+
+		&__background {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            object-fit: cover;
+            object-position: center;
+		}
+}
+.hero::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    z-index: 2;
+    opacity: 0.6;
+}
+.menu {
+
+		&__list {
+            display: flex;
+            justify-content: center;
+
+            flex-wrap: wrap;
+
+            column-gap: 16px;
+            row-gap: 15px;
+
+		}
+
+		&__item {
+		}
+
+		&__link {
+		}
+}
+
+.button{
+    border-radius: 4px;
+    background-color: #d8ae5e;
+    color: #f4f4f4;
+
+    text-transform: uppercase;
+    padding: 8px 16px;
+}
+
+
+.header-block {
+    text-align: center;
+
+    &__title {
+        font-family: 'Bodoni 72', serif;
+        text-transform: uppercase;
+        font-size: 64px;
+    }
+
+    &__title:not(:last-child){
+        margin-bottom: 8px;
+    }
+
+    &__text {
+        letter-spacing: 0.8px;
+        line-height: 1.2;
+        text-transform: uppercase;
+    }
+
+    &__text p:not(:last-child) {
+        margin-bottom: 5px;
+    }
+}
+
+.header-block::after{
+    content: "";
+    width: 120px;
+    height: 1px;
+    background-color: #d8ae5e;
+    margin-top: 32px;
+}
+
+
+.about {
+
+    &__container {
+    }
+
+    &__header {
+        margin-bottom: 32px;
+    }
+
+    &__content {
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__text {
+        letter-spacing: 1px;
+        line-height: 1.5;
+        font-size: 20px;
+    }
+
+    &__text:not(:last-child){
+        margin-bottom: 32px;
+    }
+
+    &__text p:not(:last-child){
+        margin-bottom: 10px;
+    }
+
+    &__button {
+    }
+}
+
+
+@media (any-hover: hover){
+    .button:hover{
+        background-color: #9a7c43;
+    }
+
+    .menu__link:hover{
+        text-decoration: underline;
+    }
+}
+
+@media (max-width: 767.98px){
+    .hero__title {
+        font-size: 66px;
+    }
+
+    .menu__list{
+        font-size: 20px;
+    }
+    
+    [class*="page__"]{
+        padding-block: 32px;
+    }
+
+    .header-block {
+        &__title{
+            font-size: 46px;
+        }
+        
+        &__text{
+            font-size: 14px;
+        }
+    }
+
+    .header-block::after{
+        margin-top: 16px;
+    }
+
+    .about{
+        &__text{
+            font-size: 16px;
+        }
+
+        &__text:not(:last-child){
+            margin-bottom: 16px;
+        }
+
+        &__header{
+            margin-bottom: 16px;
+        }
+    }
+}
